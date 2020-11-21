@@ -1,0 +1,22 @@
+{
+  "ContactsDB": [
+    {
+      "id": 1,
+      "_fullName": "Jane",
+      "_address": "Casa bella Greens near Hanuman Temple",
+      "_city": "Hyderabad",
+      "_phoneNumber": "9867012321",
+      "_pinCode": "456789",
+      "_state": "Telangana"
+    },
+    {
+      "id": 2,
+      "_fullName": "Hardik",
+      "_address": "Casa Vista Lakeshore Greens Mumbai",
+      "_city": "Mumbai",
+      "_phoneNumber": "+919867012321",
+      "_pinCode": "400068",
+      "_state": "Maharashtra"
+    }
+  ]
+}
