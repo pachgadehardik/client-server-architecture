@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, intial-scale=1.0">
+    <title>Test Ajax Services and Promise</title>
+    <style>
+        .body {
+            margin: auto;
+        }
+        div{
+            border: 3px solid black;
+            background-color: aquamarine;
+            padding: 50px;
+            width: 80%;
+            font-size: xx-large;
+            margin-top: 50px;
+        }
+    </style>
+    <script src="http_services.js"></script>
+</head>
+
+<body>
+    <h1>Test Services Result</h1>
+    <div id="get_service"></div>
+    <div id="delete_service"></div>
+    <div id="post_service"></div>
+    <script>
+        const getElement = document.querySelector('#get_service')
+        const getUrl = "http://localhost:3000/EmployeePayrollDB/1";
+        makeServiceCall("GET", getUrl, true)
+            .then(responseText => {
+                console.log("Get User data: " + responseText);
+                getElement.textContent = JSON.stringify(responseText);
+            })
+            .catch(error =>{
+                getElement.textContent = "Get Error Stat: " + JSON.stringify(error);
+            } );
+
+        const deleteElement = document.querySelector('#delete_service')
+        const deleteUrl = "http://localhost:3000/EmployeePayrollDB/3";
+        makeServiceCall("DELETE", deleteUrl, false)
+            .then(responseText => {
+                console.log("Delete User data: " + responseText)
+                deleteElement.textContent = responseText;
+            })
+            .catch(error =>{
+                deleteElement.textContent = "Delete Error Stat: " + JSON.stringify(error);
+            } );
+
+        const postElement = document.querySelector('#post_service')
+        const postUrl = "http://localhost:3000/EmployeePayrollDB";
+        const empData = {
+                "_name": "Amarpa Shashanka Keerthi Kumar",
+                "_gender": "female",
+                "_department": [
+                    "Sales"
+                ],
+                "_salary": "400000",
+                "_startDate": "29 Oct 2019",
+                "_note": "",
+                "_profilePic": "../assets/profile-images/Ellipse -1.png"
+            }
+        makeServiceCall("POST", postUrl, true,empData)
+            .then(responseText => {
+                console.log("POST User data: " + responseText)
+                postElement.textContent = responseText;
+            })
+            .catch(error =>{
+                postElement.textContent = "Post Error Stat: " + JSON.stringify(error);
+            } );
+    </script>
+</body>
+
+</html>

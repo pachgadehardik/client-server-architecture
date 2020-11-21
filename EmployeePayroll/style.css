@@ -1,0 +1,311 @@
+body{
+    margin:0;
+    height:100%;
+}
+
+.header{
+    padding:15px 0;
+    background-color: white;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border:0px solid green;
+}
+.logo-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border:0px solid green;
+    width: 80%;
+}
+.logo-content-img{
+    border: solid 0px #42515f;
+}
+.emp-text{
+    font:normal normal bold 20px/25px Monserrat;
+    font-family: "Montserrat",sans-serif;
+    letter-spacing: 0px;
+    color:#82a70c;
+    text-transform: capitalize;
+}
+.emp-payroll{
+    color: #42515f;
+}
+*{
+    box-sizing: border-box;
+}
+.form-content{
+    min-height: calc(100%-80px);
+    background-color: #f7f7f7;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    border: 0px solid green;
+    padding: 0% 9%;
+}
+.form{
+    width: 65%;
+    padding: 44px 60px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #000029;
+    border:1px solid#f5f5f5;
+    border-radius: 8px;
+    opacity:1;
+}
+.form-head{
+    font:normal normal bold 24px/37px Roboto;
+    letter-spacing:0px;
+    color: #42515f;
+    text-transform: capitalize;
+    opacity: 1;
+    padding-bottom: 20px;
+}
+
+.row-content{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    align-items: center;
+    border:0px solid green;
+}
+.label{
+    min-width: 140px;
+}
+
+label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.text{
+    font-size: 16px;
+    color: #42515f;
+    opacity: 1;
+    font-family: Roboto;
+}
+.input{
+    widows: 100%;
+    padding:12px;
+    border: 1px solid#ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+.profile-radio-content{
+    display: flex;
+    flex-direction: row;
+}
+.profile-radio-content> label{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile{
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 12px;
+}
+select{
+    padding: 12px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    font: normal normal normal 16px Roboto;
+    letter-spacing: 0px;
+    color: #42525f;
+    background-color: transparent;
+}
+.buttonParent{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button{
+    font-size: 20px;
+    font-family: Roboto;
+    letter-spacing: 0px;
+    background-color: #42515f;
+    opacity: 1;
+    background: transparent;
+    border: none;
+    font-weight: 400;
+    min-width: 140px;
+    padding: 7px 7px;
+    border: 1px solid#707070;
+    cursor: pointer;
+}
+.button_submitButton{
+    border: none;
+    background-color: #f5f5f5;
+    margin-block-end: 30px;
+}
+
+#submitButton:hover, #resetButton:hover, #cancelButton:hover{
+    background-color: cadetblue;
+    color: white;
+}
+
+#cancelButton{
+    text-decoration: none;
+    text-align: center;
+    background-color: #f5f5f5;
+} 
+#cancelButton:link {color:#000000;}    /* unvisited link is black*/
+#cancelButton:visited {color:#000000;} /* visited link is black  */
+
+
+#resetButton{
+    text-decoration: none;
+    text-align: center;
+    background-color: #f5f5f5;
+} 
+
+@media only screen and (max-width:960 px){
+    .cancelButton{
+        margin-left: 0px;
+    }
+    .form{
+        width: 85%;
+        padding: 40px 20px 
+    }
+}
+
+@media only screen and (max-width:600px){
+    .form{
+        margin-top: 10px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .uploadButton{
+        justify-content: flex-start;
+    }
+    .profile-radio-button{
+        flex-flow: wrap;
+    }
+    .submit-reset{
+        width: 100%;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .submitButton{
+        margin: 0;
+    }
+    .buttonParent{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+}
+
+.add-button{
+    font: normal normal normal 22px/29px Roboto;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+    background: #82a70c 0% 0% no-repeat padding-box;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 18px;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.emp-detail-text{
+    font: normal normal normal 22px/29px Roboto;
+    letter-spacing: 0px;
+    color: #42515f;
+    opacity: 1;
+}
+
+.employee-count{
+    background-color: #82a70c;
+    color: #ffffff;
+    border-radius: 42%;
+    font-size: 16px;
+    width: 26px;
+    text-align: center;
+    display: inline-block;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    /* background-color: #f7f7f7; */
+    max-height: 100vh;
+    padding: 30px 0 10px;
+    box-sizing: border-box;
+}
+.table-main{
+    width: 80%;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.table{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+    min-width: 800px;
+    padding: 0 9%;
+}
+td,th{
+    text-align: left;
+    padding: 5px 8px; 
+}
+th{
+    background: #42515f 0% 0%;
+    border-radius: 3px 3px 0px 0px;
+    text-align: left;
+    letter-spacing: 0px;
+    font: normal normal medium 18px/24px Roboto;
+    color: #fffffF;
+    opacity: 1;
+    border: 0px solid #dddddd;
+}
+tr:not(:first-child){
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #e3e3e3;
+    border-radius: 3px;
+}
+td{
+    font: normal normal normal 14px/21px Roboto;
+    color: #3d3d3d;
+    opacity: 1;
+    letter-spacing: 0px;
+}
+td:first-child{
+    display: flex;
+    align-items: center;
+}
+td img :first-child{
+    margin-right: 10px;
+}
+.table-background{
+    background-color: #f7f7f7;
+}
+.dept-label{
+    background-color: #e9fea5;
+    border-radius: 40%;
+    width: fit-content;
+    padding: 1px 7px;
+    text-align: center;
+    font-size: 14px;
+    display: inline-block;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+
+error-output {
+    font-size:12px;
+    font-style:italic;
+    color:red;
+}

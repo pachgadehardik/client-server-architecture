@@ -1,0 +1,55 @@
+{
+  "EmployeePayrollDB": [
+    {
+      "id": 1,
+      "_name": "Mark",
+      "_gender": "male",
+      "_department": [
+        "Finance"
+      ],
+      "_salary": "500000",
+      "_startDate": "2020-10-28T18:30:00.000Z",
+      "_note": "All In One",
+      "_profilePic": "assets\\profile-images\\Ellipse -8.png"
+    },
+    {
+      "id": 2,
+      "_name": "Bill Gates",
+      "_gender": "male",
+      "_department": [
+        "Finance",
+        "Others"
+      ],
+      "_salary": "500000",
+      "_startDate": "2020-10-28T18:30:00.000Z",
+      "_note": "Terrific Engineer",
+      "_profilePic": "assets\\profile-images\\Ellipse -3.png"
+    },
+    {
+      "_name": "Amarpa Shashanka Kumar",
+      "_gender": "female",
+      "_department": [
+        "Sales"
+      ],
+      "_salary": "400000",
+      "_startDate": "2020-10-28T18:30:00.000Z",
+      "_note": "",
+      "_profilePic": "assets\\profile-images\\Ellipse -7.png",
+      "id": 3
+    },
+    {
+      "_name": "Hardik",
+      "_profilePic": "assets\\profile-images\\Ellipse -3.png",
+      "_gender": "male",
+      "_department": [
+        "Sales",
+        "Finance",
+        "Others"
+      ],
+      "_salary": "500000",
+      "_startDate": "2020-11-14T18:30:00.000Z",
+      "_note": "Hardiks Notes!! After Updating ",
+      "id": 4
+    }
+  ]
+}
